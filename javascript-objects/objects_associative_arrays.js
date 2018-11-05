@@ -27,3 +27,27 @@ var book = {
  * Por que?
  */
 
+function mostrarLogs(x) { 
+   for ( let property in x) {
+       console.log(x[property]);
+       let y = x[property];
+       if (typeof y  === 'object') {
+          mostrarLogs(y);
+       }
+   }
+ }
+ /**
+  * function mostrarLogs(x) { 
+   Object.keys(x).foreach( (k, v))
+ }
+  */
+
+ mostrarLogs(book);
+
+ /* Se utilizan los [] por que a la hora de ejecutar este código el programa no conoce el nombre de las propiedas
+ del objecto puesto que estas han sido escritas por el programador, de esta manera recorremos todas las keys de
+ nuestro objeto y se lo pasamos a los brackets para así acceder a los datos de esta propiedad.  */
+
+ /** Utilizando esta misma mecánica se puede acceder a los objetos "hijos" del objeto que estamos iterando volvemos a llamar 
+  * a la misma funció para mostrar su contenido.
+  */
