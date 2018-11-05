@@ -18,3 +18,4 @@ var book = {
         surname: "Flanagan"                     // these property names are unquoted.
     }
 };
+console.log(book);

@@ -38,3 +38,15 @@ var book = {
 // del objeto book
 
 // Cambia el valor de las propiedades del objeto author
+
+console.log(empty);
+console.log(point.y);
+console.log(point2.y);
+
+book["main title"] = 'Título principal'
+console.log(book["main title"]);
+console.log(book.author.surname);
+
+
+
+
