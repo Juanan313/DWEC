@@ -12,9 +12,19 @@
 
 var q = {};
 
-/**
- * tu codigo aqui
- */
+// Mi codigo
+
+Object.defineProperty(q, "extend", { 
+        value: function (obj) {
+        q = Object.assign(obj, q)
+        },
+        enumerable:false,
+        configurable:true,
+        writable: false
+    });
+
+
+// end
 
 var p = Object.defineProperties({}, {
             x: { value: 1, writable: true, enumerable:true, configurable:true },
