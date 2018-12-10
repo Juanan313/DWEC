@@ -21,13 +21,13 @@ class MrMeeseeks {
     }
 
     makeRequest(deseo, objeto) {
-        let closure = function(cosa) {
+        let closure = function() {
             function execute() {
-                return deseo + " " + cosa;
+                return deseo + " " + objeto;
             }
             return execute
         };
-        this.action = closure(objeto);
+        this.action = closure();
         this.responseOnRequest();
     }
 
@@ -36,9 +36,9 @@ class MrMeeseeks {
     }
 }
 
-// var meesek = new MrMeeseeks();
-// meesek.makeRequest("Open","stupid majonaise Jerry's jar! ");
-// meesek.fullFillRequest();
+var meesek = new MrMeeseeks();
+meesek.makeRequest("Open","stupid majonaise Jerry's jar! ");
+meesek.fullFillRequest();
 
 function singletonMrMeeseks() {
     const prototipo = new MrMeeseeks();
