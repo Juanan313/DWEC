@@ -36,6 +36,10 @@ class MrMeeseeks {
     }
 }
 
+// var meesek = new MrMeeseeks();
+// meesek.makeRequest("Open","stupid majonaise Jerry's jar! ");
+// meesek.fullFillRequest();
+
 function singletonMrMeeseks() {
     const prototipo = new MrMeeseeks();
 
@@ -46,6 +50,6 @@ function singletonMrMeeseks() {
     }
 }
 
-exports.singletonMrMeeseks = function() {
+exports.singleMrMeeseks = function() {
     return singletonMrMeeseks();
 };
