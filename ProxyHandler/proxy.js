@@ -1,3 +1,4 @@
+// Handler = custom logic for the methods
 var handler = {
     get: function (target, name) {
         // Custom logic
@@ -8,7 +9,7 @@ var handler = {
         }
     }
 };
-
+// Syntax: var p = new Proxy(Target, handler);
 var p = new Proxy( {}, handler);
 
 p.foo = 'bar';
