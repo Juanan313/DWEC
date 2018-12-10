@@ -8,10 +8,11 @@ class MrMeesekBox {
         }
         this._box = new MrMeesekBox();
         this._box.reality = [];
-        this._box.createMrMeeseks = function () {
-            this._mrmee = importMrMeeseks.singleMrMeeseks.get();
-          }
         return this._box;
+    }
+
+    createMrMeeseks() {
+        return mrmee = importMrMeeseks.singleMrMeeseks.get();
     }
 }
 
