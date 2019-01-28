@@ -179,3 +179,25 @@ nav ul li a:hover, nav ul li.active a { background: none repeat scroll 0% 0% tra
 	.logo {  }
 	nav {  }
 }
+
+#dataDiv {
+	width: 100%;
+	height: 300px;
+	background-color: bisque;
+	border: 2px solid rgb(255, 199, 130);
+}
+
+#dataDiv ul {
+	margin: 0 auto;
+	margin-top: 75px;
+	width: 50%;
+	height: auto;
+	border: 2px dashed black;
+}
+
+#dataDiv ul li {
+	padding: 8px;
+	font-size: 15px;
+	color: rgb(73, 65, 65);
+	text-align: center;
+}
