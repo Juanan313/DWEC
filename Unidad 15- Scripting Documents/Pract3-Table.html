@@ -65,6 +65,9 @@ window.onload = function () {
         var tr = document.createElement('tr');
         headers.forEach( header => {
             var td = document.createElement('td');
+            if (header == 'height') {
+                td.setAttribute('class','heightTd');
+            }
             td.innerHTML = mountain[header];
             tr.appendChild(td);
         })
@@ -72,7 +75,7 @@ window.onload = function () {
         table.appendChild(tr);
     });
      
-    document.body.appendChild(table);
+    document.getElementById('mountains').appendChild(table);
  }
 // Your code here </script>
 </body>
