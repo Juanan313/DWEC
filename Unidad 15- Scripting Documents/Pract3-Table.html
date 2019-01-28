@@ -63,18 +63,11 @@ window.onload = function () {
 
     mountains.forEach(mountain => {
         var tr = document.createElement('tr');
-        var td1 = document.createElement('td');
-        td1.innerHTML = mountain.name;
-        tr.appendChild(td1);
-
-        var td2 = document.createElement('td');
-        td2.setAttribute('class', 'heightTd');
-        td2.innerHTML = mountain.height;
-        tr.appendChild(td2);
-
-        var td3 = document.createElement('td');
-        td3.innerHTML = mountain.place;
-        tr.appendChild(td3);
+        headers.forEach( header => {
+            var td = document.createElement('td');
+            td.innerHTML = mountain[header];
+            tr.appendChild(td);
+        })
 
         table.appendChild(tr);
     });
